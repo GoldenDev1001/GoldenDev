@@ -20,7 +20,8 @@
   ],
   "incognito": "split",
   "host_permissions": [
-    "*://*.youtube.com/*"
+    "*://*.youtube.com/*",
+    "https://api.github.com/repos/*"
   ],
   "background": {
     "service_worker": ["background.js", "autoupdater.js"]
