@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Smart Adblocker Options</title>
+  <style>
+    body { background:#111; color:#eee; font-family:Arial; padding:18px; }
+    .box { background:#222; padding:18px; border-radius:8px; height:auto; width:auto; border:1px solid #333; }
+    label { display:block; margin-bottom:12px; font-size:15px; }
+    input[type="checkbox"]{ transform:scale(1.2); margin-right:8px; }
+    button{ padding:10px 14px; border:none; border-radius:8px; background:#4caf50; color:white; }
+    button:hover{ opacity:0.93;}
+    #status{ margin-top:10px; font-size:13px; color:#9f9; }
+    .no-highlight {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;  /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select:none; /* Standard */
+    }
+    .cursor-allow {
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body class="no-highlight">
+  <div class="box">
+    <h2>Smart Adblocker — Settings</h2>
+
+    <label class="cursor-allow"><input type="checkbox" class="cursor-allow" id="opt-enabled"> Enable Smart Adblocker</label>
+    <label class="cursor-allow"><input type="checkbox" class="cursor-allow" id="opt-volume"> Automatically mute ads & restore volume</label>
+
+    <div style="margin-top:10px;">
+      <button class="cursor-allow" id="saveBtn">Save Settings</button>
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
